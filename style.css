@@ -12,22 +12,36 @@ body {
 }
 
 header {
-  background-color: #ff7f50;
+  background-color: rgb(225, 67, 93);
   padding: 20px;
   color: white;
   text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
 header nav h1 {
-  margin-bottom: 10px;
+  font-size: 1.8rem;
+  margin: 0;
+  text-transform: uppercase;
 }
 
 header ul {
   list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
 }
 
 header ul li {
-  display: inline;
+  display: inline-block;
   margin: 0 15px;
 }
 
@@ -35,6 +49,13 @@ header ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1rem;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+header ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 main {
